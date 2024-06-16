@@ -53,7 +53,16 @@
                         <li class="nav-item"> <a class="nav-link" href="admin-agent-detail.html">Listes</a></li>
                     </ul>
                 </li>
-
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="collapse" href="#collapsetrajet" role="button" aria-expanded="false" aria-controls="collapseguest">
+                   Trajets
+                    </a>
+                    <!-- Submenu -->
+                    <ul class="nav collapse flex-column" id="collapsetrajet" data-bs-parent="#navbar-sidebar">
+                        <li class="nav-item"> <a class="nav-link" href="admin-guest-list.html">Listes</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="admin-guest-detail.html.htm">Ajouter un trajet</a></li>
+                    </ul>
+                </li>
                 <!-- Menu item -->
 
             </ul>

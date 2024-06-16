@@ -13,6 +13,8 @@ return new class extends Migration
     {
         Schema::create('taxies', function (Blueprint $table) {
             $table->id();
+            $table->string('available_seats');
+            $table->string('classe');
             $table->timestamps();
         });
     }

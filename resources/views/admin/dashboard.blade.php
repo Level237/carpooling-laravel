@@ -78,7 +78,7 @@ Admin Dashboard
                         <!-- Digit -->
                         <div>
                             <h4 class="mb-0">147</h4>
-                            <span class="h6 fw-light mb-0">Booked Room</span>
+                            <span class="h6 fw-light mb-0">Trajets</span>
                         </div>
                         <!-- Icon -->
                         <div class="icon-lg rounded-circle bg-info text-white mb-0"><i class="fa-solid fa-building-circle-check fa-fw"></i></div>
@@ -93,7 +93,7 @@ Admin Dashboard
             <!-- Title -->
             <div class="col-12">
                 <div class="d-flex justify-content-between">
-                    <h4 class="mb-0">Popular Hotels</h4>
+                    <h4 class="mb-0">Trajets</h4>
                     <a href="#" class="btn btn-primary-soft mb-0">View All</a>
                 </div>
             </div>
