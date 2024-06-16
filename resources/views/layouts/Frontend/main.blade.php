@@ -171,6 +171,7 @@ Footer END -->
 <!-- Vendors -->
 <script src="{{ asset('assets/vendor/choices/js/choices.min.js') }}"></script>
 <script src="{{ asset('assets/vendor/flatpickr/js/flatpickr.min.js') }}"></script>
+<script src="{{ asset('assets/vendor/dropzone/js/dropzone.js') }}"></script>
 
 <!-- ThemeFunctions -->
 <script src="{{ asset('assets/js/functions.js') }}"></script>
