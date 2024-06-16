@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Taxy;
 use App\Models\User;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
@@ -18,12 +19,15 @@ return new class extends Migration
             ->constrained()
             ->cascadeOnUpdate()
             ->cascadeOnDelete();
+            $table->foreignIdFor(Taxy::class)
+            ->constrained()
+            ->cascadeOnUpdate()
+            ->cascadeOnDelete();
             $table->string('departure_location');
             $table->string('arrival_departure');
             $table->string('departure_time');
             $table->string('available_seats');
             $table->string('classe');
-            $table->string('taxy_profile');
             $table->timestamps();
         });
     }

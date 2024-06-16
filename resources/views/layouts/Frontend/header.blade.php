@@ -111,7 +111,7 @@
 
 				<!-- Sign In button -->
 				<li class="nav-item ms-2 d-none d-sm-block">
-					<a href="#" class="btn btn-sm btn-primary-soft mb-0"><i class="fa-solid fa-right-to-bracket me-2"></i>Sign Up</a>
+					<a href="{{ route('login') }}" class="btn btn-sm btn-primary-soft mb-0"><i class="fa-solid fa-right-to-bracket me-2"></i>Login</a>
 				</li>
 			</ul>
 			<!-- Navbar right side END -->
