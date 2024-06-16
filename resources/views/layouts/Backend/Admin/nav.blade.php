@@ -5,7 +5,7 @@
             <!-- Logo START -->
             <div class="d-flex align-items-center d-xl-none">
                 <a class="navbar-brand" href="index.html-1.htm">
-                    <img class="navbar-brand-item h-40px" src="assets/images/logo-icon.svg" alt="">
+                    <img class="navbar-brand-item h-40px" src="{{ asset("assets/images/logo-icon.svg") }}" alt="">
                 </a>
             </div>
             <!-- Logo END -->
@@ -138,7 +138,7 @@
                 <li class="nav-item ms-3 dropdown">
                     <!-- Avatar -->
                     <a class="avatar avatar-sm p-0" href="#" id="profileDropdown" role="button" data-bs-auto-close="outside" data-bs-display="static" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img class="avatar-img rounded-2" src="assets/images/avatar/01.jpg" alt="avatar">
+                        <img class="avatar-img rounded-2" src="{{ asset('assets/images/avatar/01.jpg') }}" alt="avatar">
                     </a>
 
                     <ul class="dropdown-menu dropdown-animation dropdown-menu-end shadow pt-3" aria-labelledby="profileDropdown">
@@ -147,7 +147,7 @@
                             <div class="d-flex align-items-center">
                                 <!-- Avatar -->
                                 <div class="avatar me-3">
-                                    <img class="avatar-img rounded-circle shadow" src="assets/images/avatar/01.jpg" alt="avatar">
+                                    <img class="avatar-img rounded-circle shadow" src="{{ asset('assets/images/avatar/01.jpg') }}" alt="avatar">
                                 </div>
                                 <div>
                                     <a class="h6 mt-2 mt-sm-0" href="#">{{ auth()->user()->name }}</a>

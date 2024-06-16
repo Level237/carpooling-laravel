@@ -19,7 +19,7 @@ Admin Dashboard
             <div class="col-12 mb-4 mb-sm-5">
                 <div class="d-sm-flex justify-content-between align-items-center">
                     <h1 class="h3 mb-2 mb-sm-0">Dashboard</h1>
-                    <div class="d-grid"><a href="#" class="btn btn-primary-soft mb-0"><i class="bi bi-plus-lg fa-fw"></i> New Booking</a></div>
+                    <div class="d-grid"><a href="#" class="btn btn-primary-soft mb-0"><i class="bi bi-plus-lg fa-fw"></i> New Driver</a></div>
                 </div>
             </div>
         </div>
@@ -33,7 +33,7 @@ Admin Dashboard
                         <!-- Digit -->
                         <div>
                             <h4 class="mb-0">56</h4>
-                            <span class="h6 fw-light mb-0">Total Hotels</span>
+                            <span class="h6 fw-light mb-0">Total Drivers</span>
                         </div>
                         <!-- Icon -->
                         <div class="icon-lg rounded-circle bg-warning text-white mb-0"><i class="fa-solid fa-hotel fa-fw"></i></div>
@@ -47,8 +47,8 @@ Admin Dashboard
                     <div class="d-flex justify-content-between align-items-center">
                         <!-- Digit -->
                         <div>
-                            <h4 class="mb-0">$836,789</h4>
-                            <span class="h6 fw-light mb-0">Total Incomes</span>
+                            <h4 class="mb-0">12</h4>
+                            <span class="h6 fw-light mb-0">Total reservations</span>
                         </div>
                         <!-- Icon -->
                         <div class="icon-lg rounded-circle bg-success text-white mb-0"><i class="fa-solid fa-hand-holding-dollar fa-fw"></i></div>
@@ -62,8 +62,8 @@ Admin Dashboard
                     <div class="d-flex justify-content-between align-items-center">
                         <!-- Digit -->
                         <div>
-                            <h4 class="mb-0">245</h4>
-                            <span class="h6 fw-light mb-0">Total Rooms</span>
+                            <h4 class="mb-0">24</h4>
+                            <span class="h6 fw-light mb-0">Total Users</span>
                         </div>
                         <!-- Icon -->
                         <div class="icon-lg rounded-circle bg-primary text-white mb-0"><i class="fa-solid fa-bed fa-fw"></i></div>
