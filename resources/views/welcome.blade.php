@@ -1,7 +1,7 @@
 @extends('layouts.Frontend.main')
 
 @section('title')
-Covoiturage Homepage
+Covoiturage Accueil
 @endsection
 
 @section('content')
@@ -36,33 +36,24 @@ Covoiturage Homepage
 				<div class="row g-4 position-relative">
 
 					<!-- Nav tabs START -->
-					<div class="col-lg-6">
-						<ul class="nav nav-pills nav-pills-dark" id="pills-tab" role="tablist">
-							<li class="nav-item" role="presentation">
-								<button class="nav-link rounded-start rounded-0 mb-0 active" id="pills-one-way-tab" data-bs-toggle="pill" data-bs-target="#pills-one-way" type="button" role="tab" aria-selected="true">One Way</button>
-							</li>
-							<li class="nav-item" role="presentation">
-								<button class="nav-link rounded-end rounded-0 mb-0" id="pills-round-trip-tab" data-bs-toggle="pill" data-bs-target="#pills-round-trip" type="button" role="tab" aria-selected="false">Round Trip</button>
-							</li>
-						</ul>
-					</div>
+
 					<!-- Nav tabs END -->
 
 					<!-- Ticket class -->
-					<div class="col-lg-3 ms-auto">
+					<div class="col-lg-6 ms-auto">
 						<div class="form-control-bg-light form-fs-md">
 							<select class="form-select js-choice">
 								<option value="">Select Class</option>
 								<option>Economy</option>
-								<option>Premium Economy</option>
+								<option>Premium</option>
 								<option>Business</option>
-								<option>First Class</option>
+								<option>Classic</option>
 							</select>
 						</div>
 					</div>
 
 					<!-- Ticket Travelers -->
-          <div class="col-lg-3 ms-auto">
+          <div class="col-lg-6 ms-auto">
 						<div class="form-control-bg-light form-fs-md">
 							<select class="form-select js-choice">
 								<option value="">Select Travelers</option>
