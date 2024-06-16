@@ -94,7 +94,9 @@
 <main>
 
 	<!-- Sidebar START -->
+
 	@include('layouts.Backend.Admin.sidebar')
+
 	<!-- Sidebar END -->
 
 	<!-- Page content START -->
