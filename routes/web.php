@@ -38,6 +38,7 @@ Route::get('rides',[AdminController::class,'rides'])->name('rides');
 
 Route::middleware(['auth','driver'])->name('driver.')->prefix('driver')->group(function(){
     Route::get('dashboard',[DriverController::class,'index'])->name('dashboard');
+    Route::get('reservations',[DriverController::class,'reservations'])->name('reservations');
 });
 Route::middleware(['auth','customer'])->name('customer.')->prefix('customer')->group(function(){
     Route::get('dashboard',[CustomerController::class,'index'])->name('dashboard');

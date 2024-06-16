@@ -11,4 +11,8 @@ class DriverController extends Controller
 
         return view('driver.dashboard');
     }
+    public function reservations(){
+
+        return view('driver.reservations');
+    }
 }
