@@ -27,4 +27,8 @@ class AdminController extends Controller
 
         return view('admin.drivers.list');
     }
+    public function rides(){
+
+        return view('admin.rides.index');
+    }
 }

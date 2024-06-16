@@ -32,6 +32,7 @@ Route::get('reservations',[AdminController::class,"reservations"])->name('reserv
 Route::get('users',[AdminController::class,"users"])->name('users');
 Route::get('users/create',[AdminController::class,"createUser"])->name('users.create');
 Route::get('drivers',[AdminController::class,'drivers'])->name('drivers');
+Route::get('rides',[AdminController::class,'rides'])->name('rides');
 });
 
 

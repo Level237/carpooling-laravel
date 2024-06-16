@@ -59,7 +59,7 @@
                     </a>
                     <!-- Submenu -->
                     <ul class="nav collapse flex-column" id="collapsetrajet" data-bs-parent="#navbar-sidebar">
-                        <li class="nav-item"> <a class="nav-link" href="admin-guest-list.html">Listes</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="{{ route('admin.rides') }}">Listes</a></li>
                         <li class="nav-item"> <a class="nav-link" href="admin-guest-detail.html.htm">Ajouter un trajet</a></li>
                     </ul>
                 </li>
