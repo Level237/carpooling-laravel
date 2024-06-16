@@ -29,6 +29,7 @@ Route::get('/dashboard', function () {
 Route::middleware(['auth','admin'])->name('admin.')->prefix('admin')->group(function(){
 Route::get('dashboard',[AdminController::class,'index'])->name('dashboard');
 Route::get('reservations',[AdminController::class,"reservations"])->name('reservations');
+Route::get('users',[AdminController::class,"users"])->name('users');
 });
 
 

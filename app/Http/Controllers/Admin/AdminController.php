@@ -14,4 +14,11 @@ class AdminController extends Controller
     public function reservations(){
         return view('admin.reservations.list');
     }
+    public function users(){
+        return view('admin.users.index');
+    }
+
+    public function addUser(){
+
+    }
 }

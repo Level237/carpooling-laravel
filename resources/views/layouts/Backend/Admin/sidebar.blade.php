@@ -14,7 +14,7 @@
             <!-- Sidebar menu START -->
             <ul class="navbar-nav flex-column" id="navbar-sidebar">
                 <!-- Menu item -->
-                <li class="nav-item"><a href="admin-dashboard.html.htm" class="nav-link active">Dashboard</a></li>
+                <li class="nav-item"><a href="{{ route('admin.dashboard') }}" class="nav-link active">Dashboard</a></li>
 
                 <!-- Title -->
                 <li class="nav-item ms-2 my-2">Pages</li>
@@ -37,7 +37,7 @@
                     </a>
                     <!-- Submenu -->
                     <ul class="nav collapse flex-column" id="collapseguest" data-bs-parent="#navbar-sidebar">
-                        <li class="nav-item"> <a class="nav-link" href="admin-guest-list.html">Listes</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="{{ route('admin.users') }}">Listes</a></li>
                         <li class="nav-item"> <a class="nav-link" href="admin-guest-detail.html.htm">Ajouter un utilisateur</a></li>
                     </ul>
                 </li>

@@ -48,7 +48,7 @@ Listes Reservation
 				<div class="card-body">
 
 					<!-- Title -->
-					<h5 class="mb-3">Listes des reservations</h5>
+					<h5 class="mb-3">Listes des utilisateurs</h5>
 
 					<!-- Table head -->
 					<div class="bg-light rounded p-3 d-none d-lg-block">
