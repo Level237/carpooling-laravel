@@ -15,10 +15,6 @@ return new class extends Migration
     {
         Schema::create('rides', function (Blueprint $table) {
             $table->id();
-            $table->foreignIdFor(User::class)
-            ->constrained()
-            ->cascadeOnUpdate()
-            ->cascadeOnDelete();
             $table->foreignIdFor(Taxy::class)
             ->constrained()
             ->cascadeOnUpdate()

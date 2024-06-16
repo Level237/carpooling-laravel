@@ -22,4 +22,9 @@ class AdminController extends Controller
 
         return view('admin.users.create');
     }
+
+    public function drivers(){
+
+        return view('admin.drivers.list');
+    }
 }

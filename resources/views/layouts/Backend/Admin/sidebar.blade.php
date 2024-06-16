@@ -50,7 +50,7 @@
                     <!-- Submenu -->
                     <ul class="nav collapse flex-column" id="collapseagent" data-bs-parent="#navbar-sidebar">
                         <li class="nav-item"> <a class="nav-link" href="admin-agent-list.html">Ajouter un conducteur</a></li>
-                        <li class="nav-item"> <a class="nav-link" href="admin-agent-detail.html">Listes</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="{{ route('admin.drivers') }}">Listes</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
