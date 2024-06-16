@@ -38,7 +38,7 @@
                     <!-- Submenu -->
                     <ul class="nav collapse flex-column" id="collapseguest" data-bs-parent="#navbar-sidebar">
                         <li class="nav-item"> <a class="nav-link" href="{{ route('admin.users') }}">Listes</a></li>
-                        <li class="nav-item"> <a class="nav-link" href="admin-guest-detail.html.htm">Ajouter un utilisateur</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="{{ route('admin.users.create') }}">Ajouter un utilisateur</a></li>
                     </ul>
                 </li>
 

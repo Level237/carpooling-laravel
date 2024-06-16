@@ -4,8 +4,8 @@
 		<div class="container">
 			<!-- Logo START -->
 			<a class="navbar-brand" href="index.html-1.htm">
-				<img class="light-mode-item navbar-brand-item" src="assets/images/logo.svg" alt="logo">
-				<img class="dark-mode-item navbar-brand-item" src="assets/images/logo-light.svg" alt="logo">
+				<img class="light-mode-item navbar-brand-item" src="{{ asset('assets/images/logo.svg') }}" alt="logo">
+				<img class="dark-mode-item navbar-brand-item" src="{{ asset('assets/images/logo-light.svg') }}" alt="logo">
 			</a>
 			<!-- Logo END -->
 

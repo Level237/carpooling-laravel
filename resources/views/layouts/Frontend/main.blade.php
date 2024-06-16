@@ -130,7 +130,7 @@ Footer START -->
 			<div class="col-lg-3 text-center">
 				<!-- Logo -->
 				<a class="me-0" href="index.html-1.htm">
-					<img class="h-60px" src="assets/images/logo-light.svg" alt="footer logo">
+					<img class="h-60px" src="{{ asset('assets/images/logo-light.svg') }}" alt="footer logo">
 				</a>
 				<div class="text-muted text-primary-hover mt-3"> Copyrights ©2023 Booking. Build by <a href="https://www.webestica.com/" class="text-muted">Webestica</a>. </div>
 			</div>
