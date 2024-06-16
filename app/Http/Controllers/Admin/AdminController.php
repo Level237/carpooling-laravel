@@ -10,4 +10,8 @@ class AdminController extends Controller
     public function index(){
         return view('admin.dashboard');
     }
+
+    public function reservations(){
+        return view('admin.reservations.list');
+    }
 }
