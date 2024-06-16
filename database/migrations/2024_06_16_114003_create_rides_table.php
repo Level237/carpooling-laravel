@@ -22,6 +22,7 @@ return new class extends Migration
             $table->string('arrival_departure');
             $table->string('departure_time');
             $table->string('available_seats');
+            $table->string('taxy_profile');
             $table->timestamps();
         });
     }
