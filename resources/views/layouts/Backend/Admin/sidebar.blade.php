@@ -1,89 +1,48 @@
-<nav class="navbar sidebar navbar-expand-xl navbar-light">
-    <!-- Navbar brand for xl START -->
-    <div class="d-flex align-items-center">
-        <a class="navbar-brand" href="index.html-1.htm">
-            <img class="light-mode-item navbar-brand-item" src="{{ asset('assets/images/logo.svg') }}" alt="logo">
-            <img class="dark-mode-item navbar-brand-item" src="{{ asset('assets/images/logo-light.svg') }}" alt="logo">
-        </a>
-    </div>
-    <!-- Navbar brand for xl END -->
-
-    <div class="offcanvas offcanvas-start flex-row custom-scrollbar h-100" data-bs-backdrop="true" tabindex="-1" id="offcanvasSidebar">
-        <div class="offcanvas-body sidebar-content d-flex flex-column pt-4">
-
-            <!-- Sidebar menu START -->
-            <ul class="navbar-nav flex-column" id="navbar-sidebar">
-                <!-- Menu item -->
-                <li class="nav-item"><a href="{{ route('admin.dashboard') }}" class="nav-link active">Dashboard</a></li>
-
-                <!-- Title -->
-                <li class="nav-item ms-2 my-2">Pages</li>
-
-                <!-- Menu item -->
-                <li class="nav-item">
-                    <a class="nav-link" data-bs-toggle="collapse" href="#collapsebooking" role="button" aria-expanded="false" aria-controls="collapsebooking">
-                    Reservations
-                    </a>
-                    <!-- Submenu -->
-                    <ul class="nav collapse flex-column" id="collapsebooking" data-bs-parent="#navbar-sidebar">
-                        <li class="nav-item"> <a class="nav-link" href="{{ route('admin.reservations') }}">listes des reservations</a></li>
-                    </ul>
-                </li>
-
-                <!-- Menu item -->
-                <li class="nav-item">
-                    <a class="nav-link" data-bs-toggle="collapse" href="#collapseguest" role="button" aria-expanded="false" aria-controls="collapseguest">
-                    Utilisateurs
-                    </a>
-                    <!-- Submenu -->
-                    <ul class="nav collapse flex-column" id="collapseguest" data-bs-parent="#navbar-sidebar">
-                        <li class="nav-item"> <a class="nav-link" href="{{ route('admin.users') }}">Listes</a></li>
-                        <li class="nav-item"> <a class="nav-link" href="{{ route('admin.users.create') }}">Ajouter un utilisateur</a></li>
-                    </ul>
-                </li>
-
-                <!-- Menu item -->
-                <li class="nav-item">
-                    <a class="nav-link" data-bs-toggle="collapse" href="#collapseagent" role="button" aria-expanded="false" aria-controls="collapseagent">
-                   Conducteurs
-                    </a>
-                    <!-- Submenu -->
-                    <ul class="nav collapse flex-column" id="collapseagent" data-bs-parent="#navbar-sidebar">
-                        <li class="nav-item"> <a class="nav-link" href="admin-agent-list.html">Ajouter un conducteur</a></li>
-                        <li class="nav-item"> <a class="nav-link" href="{{ route('admin.drivers') }}">Listes</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-bs-toggle="collapse" href="#collapsetrajet" role="button" aria-expanded="false" aria-controls="collapseguest">
-                   Trajets
-                    </a>
-                    <!-- Submenu -->
-                    <ul class="nav collapse flex-column" id="collapsetrajet" data-bs-parent="#navbar-sidebar">
-                        <li class="nav-item"> <a class="nav-link" href="{{ route('admin.rides') }}">Listes</a></li>
-                        <li class="nav-item"> <a class="nav-link" href="admin-guest-detail.html.htm">Ajouter un trajet</a></li>
-                    </ul>
-                </li>
-                <!-- Menu item -->
-
-            </ul>
-            <!-- Sidebar menu end -->
-
-            <!-- Sidebar footer START -->
-            <div class="d-flex align-items-center justify-content-between text-primary-hover mt-auto p-3">
-
+<section class="pt-4">
+	<div class="container">
+		<div class="card rounded-3 border p-3 pb-2">
+			<!-- Avatar and info START -->
+			<div class="d-sm-flex align-items-center">
+				<div class="avatar avatar-xl mb-2 mb-sm-0">
+					<img class="avatar-img rounded-circle" src="{{ asset('assets/images/about/01.jpg') }}" alt="">
+				</div>
+				<h4 class="mb-2 mb-sm-0 ms-sm-3"><span class="fw-light">Hi</span> {{ auth()->user()->name }}</h4>
                 <form method="POST" action="{{ route('logout') }}" id="logout-form">
                     @csrf
                   </form>
-                <a class="h6 fw-light mb-0 text-body" data-bs-toggle="tooltip" onclick="event.preventDefault();
-                document.getElementById('logout-form').submit();" data-bs-placement="top" aria-label="Sign out">
-                    <i class="fa-solid fa-arrow-right-from-bracket"></i> Log out
-                </a>
-                <a class="h6 mb-0 text-body" href="admin-settings.html.htm" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Settings">
-                    <i class="bi bi-gear-fill"></i>
-                </a>
-            </div>
-            <!-- Sidebar footer END -->
+				<a onclick="event.preventDefault();
+                document.getElementById('logout-form').submit();" class="btn btn-sm btn-primary-soft mb-0 ms-auto flex-shrink-0">Logout</a>
+			</div>
+			<!-- Avatar and info START -->
 
-        </div>
-    </div>
-</nav>
+			<!-- Responsive navbar toggler -->
+			<button class="btn btn-primary w-100 d-block d-xl-none mt-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#dashboardMenu" aria-controls="dashboardMenu">
+				<i class="bi bi-list"></i> Dashboard Menu
+			</button>
+
+			<!-- Nav links START -->
+			<div class="offcanvas-xl offcanvas-end mt-xl-3" tabindex="-1" id="dashboardMenu">
+				<div class="offcanvas-header border-bottom p-3">
+					<h5 class="offcanvas-title">Menu</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#dashboardMenu" aria-label="Close"></button>
+				</div>
+				<!-- Offcanvas body -->
+				<div class="offcanvas-body p-3 p-xl-0">
+					<!-- Nav item -->
+					<div class="navbar navbar-expand-xl">
+						<ul class="navbar-nav navbar-offcanvas-menu">
+
+							<li class="nav-item"> <a class="nav-link active" href="{{ route('driver.dashboard') }}"><i class="bi bi-house-door fa-fw me-1"></i>Dashboard</a>	</li>
+
+							<li class="nav-item"> <a class="nav-link" href="agent-listings.html.htm"><i class="bi bi-journals fa-fw me-1"></i>Mes reservations</a> </li>
+
+
+
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- Nav links END -->
+		</div>
+	</div>
+</section>

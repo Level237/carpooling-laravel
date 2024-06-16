@@ -90,7 +90,7 @@
 
 <body>
 
-<!-- **************** MAIN CONTENT START **************** -->
+@include('layouts.Frontend.header')
 <main>
 
 	<!-- Sidebar START -->
